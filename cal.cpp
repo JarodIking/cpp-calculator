@@ -1,16 +1,29 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "cal.hpp"
 
 using namespace std;
 
 int main(){
 
-    std::string str;
+    double a;
+    char oper;
+    double c;
+    double result;
 
-    std::cout << "Hello World" << "\n";
+    Calculate calculator;
 
-    std::cin >> str;
+    while(true){
+        std::cout << "Please enter a format exactly as shown (a + b, a - b, a * b, a / b, s A, r B)" << "\n";
+
+        std::cin >> a >> oper >> c;
+
+        result = calculator.calculation(a, oper, c);
+
+        std::cout << result << "\n";
+    }
+
 
 }
 
