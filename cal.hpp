@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 
 class Calculate {
     public:
@@ -25,9 +25,28 @@ class Calculate {
                     return a / c;
                 break;
 
+                case '^':
+                    return pow(a, c);
+
                 default:
                     return 0;
            }
-        }
+        };
+
+        double extra(double a, char oper){
+            switch(oper){
+                case 'r':
+                    return sqrt(a);
+
+                case 'c':
+                    return cos(a);
+
+
+                default:
+                    return 0;
+
+            }
+        };
+
 
 };
