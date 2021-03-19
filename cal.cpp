@@ -23,7 +23,7 @@ int main(){
         std::cin >> a;
         std::cin >> oper;
 
-        if(oper == 'r' || oper == 'c'){
+        if(oper == 'r' || oper == 'c' || oper == 'z'){
             result = calculator.extra(a, oper);
             std::cout << "Answer: " << result << "\n";
 
