@@ -41,8 +41,8 @@ class Calculate {
                 case 'c':
                     return cos(a);
 
-                case 'z':
-                    return cin(a);
+                case 's':
+                    return sin(a);
 
 
                 default:
