@@ -29,12 +29,15 @@ int main(){
 
     while(true){
 
+        std::cout << "Please enter equation. Enter first number. To exit press crtl+c" << "\n";
+
         std::cin >> refA;
         if(!cin){
             std::cout << "Please enter a numerical value" << "\n";
             cin.clear();
             cin.ignore(1, '\n');
         } else {
+            std::cout << "Please enter operater" << "\n";
             std::cin >> refOper;
             
             if(refOper == 'r' || refOper == 'c' || refOper == 'z'){
@@ -42,6 +45,7 @@ int main(){
                 std::cout << "Answer: " << refResult << "\n";
                 cin.clear();
             } else {
+                std::cout << "Please enter second number" << "\n";
                 std::cin >> refC;
                 if(!cin){
                     std::cout << "Please enter a numerical value, first re-enter equation" << "\n";

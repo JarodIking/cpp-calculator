@@ -7,42 +7,42 @@ class Calculate {
             
         }
 
-        double calculation(double a, char oper, double c){
-           switch(oper){
+        double calculation(double refA, char refOper, double refC){
+           switch(refOper){
                 case '+':
-                    return a + c;
+                    return refA + refC;
                 break;
 
                 case '-':
-                    return a - c;
+                    return refA - refC;
                 break;
 
                 case '*':
-                    return a * c;
+                    return refA * refC;
                 break;
 
                 case '/':
-                    return a / c;
+                    return refA / refC;
                 break;
 
                 case '^':
-                    return pow(a, c);
+                    return pow(refA, refC);
 
                 default:
                     return 0;
            }
         };
 
-        double extra(double a, char oper){
-            switch(oper){
+        double extra(double refA, char refOper){
+            switch(refOper){
                 case 'r':
-                    return sqrt(a);
+                    return sqrt(refA);
 
                 case 'c':
-                    return cos(a);
+                    return cos(refA);
 
                 case 's':
-                    return sin(a);
+                    return sin(refA);
 
 
                 default:
